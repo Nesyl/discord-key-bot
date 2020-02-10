@@ -15,3 +15,6 @@
 
 discord-key-bot
 keys.db
+keys.json
+users.json
+conf.json

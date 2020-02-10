@@ -1,7 +1,8 @@
 {
-	"Token": "Enter your bot token here",
-	"BroadcastChannel": "Channel ID number of your broadcast channel (enable dev options in discord, right click on channel and copy ID",
-	"DbFile": "Name of file for database",
-	"KeyRole": "",
+	"Token": "Njc2Mzc2NDUyMTk5MDg4MTMz.XkE5Ng.RaF_qChMMo72Fe5TQFjXVPs3mto",
+	"BroadcastChannel": "676360590377091076",
+	"DbFile": "C:/Users/d_lopes/go/src/discord-key-bot/keys.json",
+	"UserFile": "C:/Users/d_lopes/go/src/discord-key-bot/users.json",
+	"KeyRole": "key",
 	"ListPMOnly": false
 }

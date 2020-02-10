@@ -199,6 +199,11 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		return
 	}
 
+	// Grab a key for a game
+	if m.Content == "!take" {
+		GrabKey(s, m)
+	}
+
 	// Skip any messages we dont care about
 	if checkPrefix(m.Content) == false {
 		return
@@ -211,17 +216,12 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	// Add a new key to the db
 	if strings.HasPrefix(m.Content, "!add ") == true {
-		AddGame(s, m)
+		// AddGame(s, m)
 	}
 
 	// List off current games and amount of keys for each
 	if m.Content == "!listkeys" {
 		ListKeys(s, m)
-	}
-
-	// Grab a key for a game
-	if strings.HasPrefix(m.Content, "!take ") == true {
-		GrabKey(s, m)
 	}
 
 	// Search for substring of request
@@ -387,7 +387,7 @@ func CheckUserLimitAllowed(s *discordgo.Session, m *discordgo.MessageCreate, gam
 func GrabKey(s *discordgo.Session, m *discordgo.MessageCreate) {
 	// Clean up content
 	m.Content = strings.TrimPrefix(m.Content, "!take ")
-	gamename := m.Content
+	gamename := "othercide"
 	normalized := NormalizeGame(gamename)
 
 	fileLock.Lock()
