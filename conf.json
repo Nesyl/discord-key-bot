@@ -1,8 +1,8 @@
 {
-	"Token": "Njc2Mzc2NDUyMTk5MDg4MTMz.XkE5Ng.RaF_qChMMo72Fe5TQFjXVPs3mto",
+	"Token": "Njc2Mzc2NDUyMTk5MDg4MTMz.XkPkRQ.Dyw89HR1brsVPAUsDANGDVrUn1U",
 	"BroadcastChannel": "676360590377091076",
 	"DbFile": "C:/Users/d_lopes/go/src/discord-key-bot/keys.json",
 	"UserFile": "C:/Users/d_lopes/go/src/discord-key-bot/users.json",
-	"KeyRole": "key",
+	"KeyRole": "beta-tester",
 	"ListPMOnly": false
 }

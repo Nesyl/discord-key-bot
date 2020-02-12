@@ -199,6 +199,11 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		return
 	}
 
+	// Check if a user has the proper role, if a non-empty role is set
+	if !isUserRoleAllowed(s, m) {
+		return
+	}
+
 	// Grab a key for a game
 	if m.Content == "!take" {
 		GrabKey(s, m)
@@ -206,11 +211,6 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 
 	// Skip any messages we dont care about
 	if checkPrefix(m.Content) == false {
-		return
-	}
-
-	// Check if a user has the proper role, if a non-empty role is set
-	if !isUserRoleAllowed(s, m) {
 		return
 	}
 
