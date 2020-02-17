@@ -1,8 +1,8 @@
 {
-	"Token": "Njc3MTczNjY4Mzk2NDAwNjYx.XkQliQ.0MX9FVdhscI9YWORtttppwd9WOs",
-	"BroadcastChannel": "677183236429840433",
-	"DbFile": "C:/Users/d_lopes/go/src/discord-key-bot/keys.json",
-	"UserFile": "C:/Users/d_lopes/go/src/discord-key-bot/users.json",
-	"KeyRole": "Focus Team",
+	"Token": "",
+	"BroadcastChannel": "",
+	"DbFile": "",
+	"UserFile": "",
+	"KeyRole": "",
 	"ListPMOnly": false
 }
